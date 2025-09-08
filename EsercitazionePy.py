@@ -137,7 +137,7 @@ Chiedi all'utente di inserire un numero positivo N
 Utilizza un ciclo for per calcolare la somma di tutti i numeri da 1 a N
 Stampa il risultato """
 
-print("CALCOLIAMO LA SOMMA DI UNA SEQUENZA")
+""" print("CALCOLIAMO LA SOMMA DI UNA SEQUENZA")
 
 N = int(input("Inserisci un numero positivo che vuoi: "))
 while N <= 0 :
@@ -147,4 +147,24 @@ while N <= 0 :
 somma = 0  # Initializza la somma
 for i in range(1, N + 1):  # Ripete 1 fino a N (compreso)
   somma = somma + i
-print("La somma dei numeri da 1 a", N, "è:", somma)
+print("La somma dei numeri da 1 a", N, "è:", somma) """
+
+""" ------------------------------------------------- """
+
+""" Esercizio 3: Indovina il numero
+Genera un numero casuale tra 1 e 10 (usa la libreria random).
+Chiedi all'utente di indovinare il numero.
+Continua a chiedere finche l'utente non indovina il numero corretto.
+Stampa il numero di tentativi. """
+
+print("GIOCO DELL'INDOVINA IL NUMERO")
+import random
+tentativi = 1
+numero = random.randint(1,10)
+tentativo = int(input("Indovina il numero che ho in mente: "))
+while tentativo != numero :
+  tentativi = tentativi + 1
+  print("Tentativo n. ", tentativo,"Hai sbagliato! Il numero non è questo! Riprova:")
+  tentativo = int(input("Indovina il numero che ho in mente: "))
+
+print("Complimenti hai indovinato in", + tentativi,  "tentativi!! Era proprio il numero:", numero)
