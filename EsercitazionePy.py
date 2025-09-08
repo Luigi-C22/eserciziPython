@@ -66,3 +66,46 @@ print("Il tuo nome in minuscolo è: ", nome_completo.lower()) """
 
 """ ----------------------------------------------------- """
 
+""" Esercizio 5: Creazione di una mini calcolatrice
+Chiedi all'utente di inserire due numeri.
+Fornisci un menù per scegliere un'operazione: somma, sottrazione, moltiplicazione o divisione.
+Esegui l'operazione selezionata e mostra il risultato.
+Gestisci eventuali errori, come la divisione per zero. """
+
+""" print("CALCOLATRICE")
+print("Devi inserire i numeri e poi scegliere l'operazione da eseguire")
+operatore = input("Scegli quale operazione eseguire tra: +, -, *, / : ")
+
+
+if operatore != "+" and operatore != "-" and operatore != "*" and operatore != "/":
+    print("Scegli un operatore valido!!")
+    operatore = input("Scegli quale operazione eseguire tra: +, -, *, / :")
+if operatore == "+":
+        print("hai scelto ", operatore)
+elif operatore == "-":
+        print("hai scelto ", operatore)
+elif operatore == "*":
+        print("hai scelto ", operatore)
+elif operatore == "/":
+        print("hai scelto ", operatore)
+
+primo_numero = int(input("Primo numero: "))
+secondo_numero = int(input("Secondo numero: "))
+
+
+if secondo_numero == 0 and operatore == "/":
+    print("Non puoi dividere per zero")
+else:
+    if operatore == "+":
+        print("La somma di", primo_numero, "+", secondo_numero, "è:", primo_numero + secondo_numero)
+    elif operatore == "-":
+        print("La sottrazione di", primo_numero, "-", secondo_numero, "è:", primo_numero - secondo_numero)
+    elif operatore == "*":
+        print("La moltiplicazione di", primo_numero, "x", secondo_numero, "è:", primo_numero * secondo_numero)
+    elif operatore == "/":
+        print("La divisione di", primo_numero, "/", secondo_numero, "è:", primo_numero / secondo_numero)
+    else:
+        print("Operazione non valida") """
+
+""" ---------------------------------------------------- """
+""" ---------------------------------------------------- """
