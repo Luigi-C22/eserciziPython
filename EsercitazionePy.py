@@ -49,3 +49,5 @@ Esempio di output: "Ciao alice! Benvenuto/a!"  """
 print("Dimmi come ti chiami....")
 nome = input("Inserisci il tuo nome: ")
 print("Ciao", nome, "! Benvenuto/a nell'esercizio 3!")
+
+""" -------------------------------------------------------- """
