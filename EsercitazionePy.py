@@ -109,3 +109,23 @@ else:
 
 """ ---------------------------------------------------- """
 """ ---------------------------------------------------- """
+
+
+""" STRUTTURE DI CONTROLLO """
+""" ---------------------------------------------------- """
+""" ESERCIZIO 1: Verifica della maggiore età
+Chiedi all'utente di inserire la sua età.
+Se l'età è inferiore a 18, stampa "Sei minorenne".
+Se l'età è uguale a 18, stampa "Hai appena compiuto 18 anni!".
+Altrimenti , stampa "Sei maggiorenne!" """
+
+print("Verifichiamo se puoi bere alcolici!")
+eta = int(input("Quanti anni hai? "))
+if eta > 18 :
+  print("Sei già maggiorenne da un po'")
+elif eta == 18 :
+  print("Ok.Sei appena diventato maggiorenne ")
+else :
+  print("Mi spiace, ma sei ancora minorenne")
+
+print("avere", eta, "anni è un bel periodo della vita")
