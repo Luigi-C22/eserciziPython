@@ -157,7 +157,7 @@ Chiedi all'utente di indovinare il numero.
 Continua a chiedere finche l'utente non indovina il numero corretto.
 Stampa il numero di tentativi. """
 
-print("GIOCO DELL'INDOVINA IL NUMERO")
+""" print("GIOCO DELL'INDOVINA IL NUMERO")
 import random
 tentativi = 1
 numero = random.randint(1,10)
@@ -167,4 +167,19 @@ while tentativo != numero :
   print("Tentativo n. ", tentativo,"Hai sbagliato! Il numero non è questo! Riprova:")
   tentativo = int(input("Indovina il numero che ho in mente: "))
 
-print("Complimenti hai indovinato in", + tentativi,  "tentativi!! Era proprio il numero:", numero)
+print("Complimenti hai indovinato in", + tentativi,  "tentativi!! Era proprio il numero:", numero)"""
+
+
+""" ------------------------------------------------- """
+
+""" Esercizio 4: Tavola Pitagorica
+Utilizza un ciclo for nidificato per creare una tavola pitagorica (tabellina).
+Stampa la moltiplicazione tra i numeri da 1 a 10 """
+
+print("Tavola Pitagorica - Moltiplicazioni da 1 a 10")
+print("-" * 40)
+
+for i in range(1, 11):         # i va da 1 a 10
+    for j in range(1, 11):     # j va da 1 a 10
+        print(f"{i} x {j} = {i * j}")
+    print("-" * 20)  # Separatore tra le tabelline (opzionale)
