@@ -182,4 +182,4 @@ print("-" * 40)
 for i in range(1, 11):         # i va da 1 a 10
     for j in range(1, 11):     # j va da 1 a 10
         print(f"{i} x {j} = {i * j}")
-    print("-" * 20)  # Separatore tra le tabelline (opzionale)
+    print("-" * 25)  # Separatore tra le tabelline (opzionale)
