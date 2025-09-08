@@ -119,7 +119,7 @@ Se l'età è inferiore a 18, stampa "Sei minorenne".
 Se l'età è uguale a 18, stampa "Hai appena compiuto 18 anni!".
 Altrimenti , stampa "Sei maggiorenne!" """
 
-print("Verifichiamo se puoi bere alcolici!")
+""" print("Verifichiamo se puoi bere alcolici!")
 eta = int(input("Quanti anni hai? "))
 if eta > 18 :
   print("Sei già maggiorenne da un po'")
@@ -128,4 +128,23 @@ elif eta == 18 :
 else :
   print("Mi spiace, ma sei ancora minorenne")
 
-print("avere", eta, "anni è un bel periodo della vita")
+print("avere", eta, "anni è un bel periodo della vita") """
+
+""" --------------------------------------------------- """
+
+""" Esercizio 2: Somma dei numeri da 1 a N
+Chiedi all'utente di inserire un numero positivo N
+Utilizza un ciclo for per calcolare la somma di tutti i numeri da 1 a N
+Stampa il risultato """
+
+print("CALCOLIAMO LA SOMMA DI UNA SEQUENZA")
+
+N = int(input("Inserisci un numero positivo che vuoi: "))
+while N <= 0 :
+  print("Non fare il furbo!! Il numero deve essere positivo!")
+  N = int(input("Inserisci un numero positivo che vuoi: "))
+
+somma = 0  # Initializza la somma
+for i in range(1, N + 1):  # Ripete 1 fino a N (compreso)
+  somma = somma + i
+print("La somma dei numeri da 1 a", N, "è:", somma)
