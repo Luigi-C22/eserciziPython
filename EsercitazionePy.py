@@ -3,7 +3,8 @@
 Crea tre variabili per rappresentare il nome, l'età e la città di una persona.
 Stampa ciascuna variabile separatamente.
 Cambia il valore di una variabile e ristampala """
-nome = "Luigi"
+
+""" nome = "Luigi"
 eta = 54
 citta = "Roma"
 
@@ -17,7 +18,7 @@ citta = "Milano"
 
 print(nome)
 print(eta)
-print(citta)
+print(citta) """
 
 """ ---------------------------------------------- """
 """ Esercizio 2: Calcolatrice Base
@@ -46,8 +47,22 @@ Chiedi all'utente di inserire il proprio nome.
 Utilizza print() per creare un saluto personalizzato.
 Esempio di output: "Ciao alice! Benvenuto/a!"  """
 
-print("Dimmi come ti chiami....")
+""" print("Dimmi come ti chiami....")
 nome = input("Inserisci il tuo nome: ")
-print("Ciao", nome, "! Benvenuto/a nell'esercizio 3!")
+print("Ciao", nome, "! Benvenuto/a nell'esercizio 3!") """
 
 """ -------------------------------------------------------- """
+""" Esercizio 4: Formattazione di una stringa
+Chiedi all'utente di inserire il proprio nome e cognome.
+Concatenali e stampa il nome completo in maiuscolo.
+Utilizza il metodo .lower() per stampare il nome completo in minuscolo. """
+
+""" print("Per favore segui le istruzioni:")
+nome = input("Inserisci il tuo nome:")
+cognome = input("Inserisci il tuo cognome: ")
+nome_completo = nome + " " + cognome
+print("Ti chiami: ", nome_completo.upper())
+print("Il tuo nome in minuscolo è: ", nome_completo.lower()) """
+
+""" ----------------------------------------------------- """
+
