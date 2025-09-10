@@ -176,10 +176,25 @@ print("Complimenti hai indovinato in", + tentativi,  "tentativi!! Era proprio il
 Utilizza un ciclo for nidificato per creare una tavola pitagorica (tabellina).
 Stampa la moltiplicazione tra i numeri da 1 a 10 """
 
-print("Tavola Pitagorica - Moltiplicazioni da 1 a 10")
+""" print("Tavola Pitagorica - Moltiplicazioni da 1 a 10")
 print("-" * 40)
 
 for i in range(1, 11):         # i va da 1 a 10
     for j in range(1, 11):     # j va da 1 a 10
         print(f"{i} x {j} = {i * j}")
-    print("-" * 25)  # Separatore tra le tabelline (opzionale)
+    print("-" * 25)  # Separatore tra le tabelline (opzionale) """
+
+""" ----------------------------------------------------------- """
+
+""" Esercizio 5: Controllo Pari e Dispari
+Chiedi all'utente di inserire un numero positivo N
+Utilizza un ciclo for per stampare tutti i numeri da 1 a N, 
+ma utilizza continue per saltare i numeri dispari """
+
+print("Controllo numeri pari e dispari")
+
+N = int(input("Inserisci un numero positivo: "))
+for numero in range(1, N + 1):
+  if numero == N +1 :
+    break
+  print(numero)
