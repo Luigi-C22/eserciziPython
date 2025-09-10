@@ -191,7 +191,7 @@ Chiedi all'utente di inserire un numero positivo N
 Utilizza un ciclo for per stampare tutti i numeri da 1 a N, 
 ma utilizza continue per saltare i numeri dispari """
 
-print("Controllo numeri pari e dispari")
+""" print("Controllo numeri pari e dispari")
 
 N = int(input("Inserisci un numero positivo: "))
 for numero in range(1, N + 1):
@@ -199,5 +199,38 @@ for numero in range(1, N + 1):
     break
   elif numero % 2 == 1:
     continue
-  print(numero)
+  print(numero) """
   
+""" -------------------------------------------------- """
+
+""" Esercizio 6: Gioco del numero magico
+Genera un numero casuale tra 1 e 100
+Chiedi all'utente di indovinare il numero.
+Dopo ogni tentativo, fornisci un feedback: se il numero è più alto o più basso.
+Utilizza while per continuare fino a quando l'utente indovina.
+Usa break per terminare il ciclo una volta che il numero è stato indovinato.
+Stampa il numero di tentativi. """
+
+print("GIOCO DEL NUMERO MAGICO tra 1 e 100")
+import random
+numero_magico = random.randint(1, 100)
+tentativi = 1
+n = int(input("Prova ad indovinare il numero magico: "))
+if n <= 0 or n > 100:
+  print("Non valido! Il numero deve essere compreso tra 1 e 100")
+  n = int(input("Prova ad indovinare il numero magico: "))
+while n == numero_magico:
+  print("Complimenti!! Bravo, ha indovinato in ", tentativi, "tentativi!!")
+  break
+while n != numero_magico:
+  if n < numero_magico:
+    print("Sbagliato! Il numero è più alto")
+  else:
+    print("Sbagliato! Il numero è più basso")
+     
+  print("tentativo n° ", tentativi)
+  n = int(input("Prova ad indovinare il numero magico: "))
+  
+  tentativi = tentativi + 1
+  continue
+print("Complimenti!! Bravo, ha indovinato in ", tentativi, "tentativi!!")
