@@ -246,7 +246,17 @@ print("Complimenti!! Bravo, ha indovinato in ", tentativi, "tentativi!!") """
 Definisci una funzione chiamata benvenuto() che stampa il messaggio "Benvenuto al corso di Python"
 Chiama la funzione per visualizzare il messaggio """
 
-def benvenuto():
+""" def benvenuto():
   print("Benvenuto al corso di Python")
 
-benvenuto()
+benvenuto() """
+
+""" --------------------------------------------------------------------- """
+
+totale = int(input("numero: "))
+
+
+def saluta_utente(pollo):
+  print("ciao ", pollo + 11)
+
+saluta_utente(totale)
