@@ -214,13 +214,14 @@ Stampa il numero di tentativi. """
 print("GIOCO DEL NUMERO MAGICO tra 1 e 100")
 import random
 numero_magico = random.randint(1, 100)
+
 tentativi = 1
 n = int(input("Prova ad indovinare il numero magico: "))
 if n <= 0 or n > 100:
   print("Non valido! Il numero deve essere compreso tra 1 e 100")
   n = int(input("Prova ad indovinare il numero magico: "))
 while n == numero_magico:
-  print("Complimenti!! Bravo, ha indovinato in ", tentativi, "tentativi!!")
+  
   break
 while n != numero_magico:
   if n < numero_magico:
