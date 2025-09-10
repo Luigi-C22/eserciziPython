@@ -211,7 +211,7 @@ Utilizza while per continuare fino a quando l'utente indovina.
 Usa break per terminare il ciclo una volta che il numero è stato indovinato.
 Stampa il numero di tentativi. """
 
-print("GIOCO DEL NUMERO MAGICO tra 1 e 100")
+""" print("GIOCO DEL NUMERO MAGICO tra 1 e 100")
 import random
 numero_magico = random.randint(1, 100)
 
@@ -234,4 +234,19 @@ while n != numero_magico:
   
   tentativi = tentativi + 1
   continue
-print("Complimenti!! Bravo, ha indovinato in ", tentativi, "tentativi!!")
+print("Complimenti!! Bravo, ha indovinato in ", tentativi, "tentativi!!") """
+
+
+""" ---------------------------------------------------------------------- """
+
+""" ---------------------------------------------------------------------- """
+
+""" FUNZIONI E MODULARITA' """
+""" Esercizio 1: Funzione di benvenuto
+Definisci una funzione chiamata benvenuto() che stampa il messaggio "Benvenuto al corso di Python"
+Chiama la funzione per visualizzare il messaggio """
+
+def benvenuto():
+  print("Benvenuto al corso di Python")
+
+benvenuto()
