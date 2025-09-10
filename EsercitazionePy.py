@@ -197,4 +197,7 @@ N = int(input("Inserisci un numero positivo: "))
 for numero in range(1, N + 1):
   if numero == N +1 :
     break
+  elif numero % 2 == 1:
+    continue
   print(numero)
+  
