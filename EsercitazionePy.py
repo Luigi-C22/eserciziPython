@@ -252,11 +252,30 @@ Chiama la funzione per visualizzare il messaggio """
 benvenuto() """
 
 """ --------------------------------------------------------------------- """
-
-totale = int(input("numero: "))
-
+#test
+""" totale = int(input("numero: "))
 
 def saluta_utente(pollo):
   print("ciao ", pollo + 11)
 
-saluta_utente(totale)
+saluta_utente(totale) """
+
+""" --------------------------------------------------------------------- """
+
+""" Esercizio 2: Somma di due numeri
+Definisci una funzione chiamata Somma che accetta due parametri a e b
+La funzione deve calcolare la somma di a e b e restituire il risultato.
+Chiama la funzione con due numeri a tua scelta e stampa il risultato. """
+
+print("Stampa di due numeri")
+
+a = int(input("Inserisci un numero: "))
+b = int(input("Inserisci un altro numero:"))
+
+def somma(a,b):
+  somma = a + b
+  
+  print("hai inserito i numeri", a, " e ", b)
+  return somma
+
+print("La somma dei tuoi numeri è: ", somma(a,b))
