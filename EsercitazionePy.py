@@ -267,7 +267,7 @@ Definisci una funzione chiamata Somma che accetta due parametri a e b
 La funzione deve calcolare la somma di a e b e restituire il risultato.
 Chiama la funzione con due numeri a tua scelta e stampa il risultato. """
 
-print("Stampa di due numeri")
+"""print("Stampa di due numeri")
 
 a = int(input("Inserisci un numero: "))
 b = int(input("Inserisci un altro numero:"))
@@ -278,4 +278,24 @@ def somma(a,b):
   print("hai inserito i numeri", a, " e ", b)
   return somma
 
-print("La somma dei tuoi numeri è: ", somma(a,b))
+print("La somma dei tuoi numeri è: ", somma(a,b)) """
+
+""" -------------------------------------------------------------------- """
+
+""" Esercizio 3: Calcolo dell'area di un rettangolo
+Definisci una funzione area_rettangolo che accetta la base e l'altezza come parametri.
+La funzione deve calcolare e restituire l'area del rettangolo.
+Chiedi all'utente di inserire i valori di base e altezza, calcola l'area e stampa il risultato. """
+
+print("Calcoliamo l'area di un rettangolo")
+
+base = int(input("Inserisci la misura della base: "))
+altezza = int(input("inserisci la misura dell'altezza: "))
+
+def area_rettangolo(base,altezza):
+  area = base * altezza
+  print("La base è: ", base, "e l'altezza è: ", altezza)
+   
+  return area
+
+print("L'area del rettangolo, data la base ", base, "e l'altezza ", altezza, "è: ", area_rettangolo(base,altezza))  
