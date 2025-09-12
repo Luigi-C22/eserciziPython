@@ -287,7 +287,7 @@ Definisci una funzione area_rettangolo che accetta la base e l'altezza come para
 La funzione deve calcolare e restituire l'area del rettangolo.
 Chiedi all'utente di inserire i valori di base e altezza, calcola l'area e stampa il risultato. """
 
-print("Calcoliamo l'area di un rettangolo")
+""" print("Calcoliamo l'area di un rettangolo")
 
 base = int(input("Inserisci la misura della base: "))
 altezza = int(input("inserisci la misura dell'altezza: "))
@@ -298,4 +298,24 @@ def area_rettangolo(base,altezza):
    
   return area
 
-print("L'area del rettangolo, data la base ", base, "e l'altezza ", altezza, "è: ", area_rettangolo(base,altezza))  
+print("L'area del rettangolo, data la base ", base, "e l'altezza ", altezza, "è: ", area_rettangolo(base,altezza)) 
+
+ """
+
+""" -------------------------------------------------------------------------- """
+""" Esercizio 4: Differenza tra scope locale e globale
+Crea una variabile numero globale
+Crea una funzione modifica_numero che modifica numero all'interno della funzione
+Stampa il valore di numero prima e dopo la chiamata alla funzione per vedere come cambia """
+
+print("Differenze tra scope locale e scope globale.")
+
+numero = 15
+def modifica_numero():
+   global numero
+   numero = numero + 54
+  
+
+print(f"La variabile 'numero' globale è: {numero}")
+modifica_numero()
+print(f"la variabile 'numero' modificata nella funzione, quindi locale è: {numero}")
