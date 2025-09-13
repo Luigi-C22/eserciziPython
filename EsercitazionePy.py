@@ -308,7 +308,7 @@ Crea una variabile numero globale
 Crea una funzione modifica_numero che modifica numero all'interno della funzione
 Stampa il valore di numero prima e dopo la chiamata alla funzione per vedere come cambia """
 
-print("Differenze tra scope locale e scope globale.")
+""" print("Differenze tra scope locale e scope globale.")
 
 numero = 15
 def modifica_numero():
@@ -318,4 +318,6 @@ def modifica_numero():
 
 print(f"La variabile 'numero' globale è: {numero}")
 modifica_numero()
-print(f"la variabile 'numero' modificata nella funzione, quindi locale è: {numero}")
+print(f"la variabile 'numero' modificata nella funzione, quindi locale è: {numero}") """
+
+""" ------------------------------------------------------------------------------ """
