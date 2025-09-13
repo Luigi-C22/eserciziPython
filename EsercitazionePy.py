@@ -321,3 +321,17 @@ modifica_numero()
 print(f"la variabile 'numero' modificata nella funzione, quindi locale è: {numero}") """
 
 """ ------------------------------------------------------------------------------ """
+""" Esercizio 5: Funzione lambda per il calcolo del prodotto
+Definisci una funzione lambda per calcolare il prodotto di sue numeri.
+Chiedi all'utente di inserire due numeri e utilizza la funzione lambda per calcolare il prodotto
+Stampa il risultato """
+
+print("Utilizzo della funzione LAMBDA")
+
+prodotto = lambda x,y : x * y
+
+numero_a = float(input("inserisci un il primo numero: "))
+numero_b = float(input("inserisci il secondo numero: "))
+print(f"Hai scelto i numeri {numero_a} e {numero_b}")
+
+print(f"Il prodotto è: {prodotto(numero_a, numero_b)}")
