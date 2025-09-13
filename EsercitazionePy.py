@@ -326,7 +326,7 @@ Definisci una funzione lambda per calcolare il prodotto di sue numeri.
 Chiedi all'utente di inserire due numeri e utilizza la funzione lambda per calcolare il prodotto
 Stampa il risultato """
 
-print("Utilizzo della funzione LAMBDA")
+""" print("Utilizzo della funzione LAMBDA")
 
 prodotto = lambda x,y : x * y
 
@@ -334,4 +334,63 @@ numero_a = float(input("inserisci un il primo numero: "))
 numero_b = float(input("inserisci il secondo numero: "))
 print(f"Hai scelto i numeri {numero_a} e {numero_b}")
 
-print(f"Il prodotto è: {prodotto(numero_a, numero_b)}")
+print(f"Il prodotto è: {prodotto(numero_a, numero_b)}") """
+
+""" -------------------------------------------------------------------------- """
+
+""" Esercizio 6: Calcolatrice con funzioni modulari
+Crea funzioni per eseguire le operazioni di base: somma, sottrazione, moltiplicazione e divisione.
+Crea una funzione principale calcolatrice che chiede all'utente di scegliere un'operazione e di inserire due numeri.
+Usa le funzioni per calcolare e stampare il risultato in base alla scelta dell'utente. """
+
+print("CALCOLATRICE CON FUNZIONI MODULARI")
+
+def somma(a,b):
+  somma = a + b
+  return somma
+
+def sottrazione(a,b):
+  sottrazione = a - b
+  return sottrazione
+
+def moltiplicazione(a,b):
+  moltiplicazione = a * b
+  return moltiplicazione
+
+def divisione(a,b):
+  if b == 0:
+    print("Non puoi dividere per zero")
+    return None
+  divisione = a / b
+  return divisione
+
+def calcolatrice():
+  operazione = input("Scegli l'operazione tra: +, -, *, /: ")
+  numero_a = float(input("Inserisci il primo numero: "))
+  numero_b = float(input("Inserisci il secondo numero: "))
+
+  if operazione == "+":
+    risultato = somma(numero_a, numero_b)
+    print(f"Il risultato dell'addizione è: {risultato}")
+    return somma(numero_a, numero_b)
+
+  elif operazione == "-":
+    risultato = sottrazione(numero_a, numero_b)
+    print(f"Il risultato della sottrazione è: {risultato}")
+    return sottrazione(numero_a, numero_b)
+    
+  elif operazione == "*":
+    risultato = moltiplicazione(numero_a, numero_b)
+    print(f"Il risultato della moltiplicazione è: {risultato}")
+    return moltiplicazione(numero_a, numero_b)
+    
+
+  elif operazione == "/":
+    risultato = divisione(numero_a, numero_b)
+    print(f"Il risultato della divisione è: {risultato}")
+    return divisione(numero_a, numero_b)
+    
+  else:
+    print("Operazione non valida")
+
+(calcolatrice())
