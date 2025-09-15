@@ -343,7 +343,7 @@ Crea funzioni per eseguire le operazioni di base: somma, sottrazione, moltiplica
 Crea una funzione principale calcolatrice che chiede all'utente di scegliere un'operazione e di inserire due numeri.
 Usa le funzioni per calcolare e stampare il risultato in base alla scelta dell'utente. """
 
-print("CALCOLATRICE CON FUNZIONI MODULARI")
+""" print("CALCOLATRICE CON FUNZIONI MODULARI")
 
 def somma(a,b):
   somma = a + b
@@ -393,4 +393,27 @@ def calcolatrice():
   else:
     print("Operazione non valida")
 
-(calcolatrice())
+(calcolatrice()) """
+
+""" ----------------------------------------------------------------------- """
+""" ----------------------------------------------------------------------- """
+
+""" STRUTTURE DATI (LISTE, TUPLE, DIZIONARI E SET) """
+""" ----------------------------------------------------------------------- """
+""" Le Liste """
+""" Esercizio 1: Creazione e Modifica di una lista
+Crea una lista di tre elementi rappresentanti nomi di animali.
+Aggiungi un altro animale alla lista.
+Rimuovi il primo animale dalla lista.
+Stampa la lista aggiornata """
+
+print("Creo un LISTA di animali")
+
+animali = ["zebra", "cavallo", "leone", "gallina", "echidna"]
+print("lista di animali originale: ", animali)
+
+animali.append("giraffa")
+print("Lista di animali dopo aver usato  append", animali)
+
+animali.pop(0)
+print("Lista di animali dopo aver usato pop", animali)
