@@ -425,10 +425,27 @@ Crea una Tupla con tre colori.
 Stampa il secondo colore nella Tupla
 Tenta di aggiungere un nuovo colore e nota l'errore per capire l'immutabilità delle Tuple """
 
-print("creo una Tupla con 3 colori")
+""" print("creo una Tupla con 3 colori")
 
 colori = ("rosso", "verde", "marrone")
 print(colori[1])
 
 # colori.append("giallo") # Questo causerà un errore perché le tuple sono immutabili
-print("Le tuple sono immutabili, non è possibile aggiungere elementi dopo la creazione.")
+print("Le tuple sono immutabili, non è possibile aggiungere elementi dopo la creazione.") """
+
+""" ------------------------------------------------------------- """
+
+""" Esercizio 3: Creazione e manipolazione di un dizionario
+Crea un dizionario per un libro con le seguenti chiavi: titolo, autore e anno.
+Aggiungi una nuova chiave genere al dizionario.
+Aggiorna l'anno di pubblicazione.
+Stampa il dizionario aggiornato. """
+
+print("sto creando un dizionario")
+
+libro = {"titolo":"le mie pigioni", "autore":"Silvio Pellicano", "anno":2023}
+print(libro)
+libro["genere"] = "Fantasy"
+print(libro)
+libro["anno"] = 2024
+print(libro)
