@@ -407,7 +407,7 @@ Aggiungi un altro animale alla lista.
 Rimuovi il primo animale dalla lista.
 Stampa la lista aggiornata """
 
-print("Creo un LISTA di animali")
+""" print("Creo un LISTA di animali")
 
 animali = ["zebra", "cavallo", "leone", "gallina", "echidna"]
 print("lista di animali originale: ", animali)
@@ -416,4 +416,19 @@ animali.append("giraffa")
 print("Lista di animali dopo aver usato  append", animali)
 
 animali.pop(0)
-print("Lista di animali dopo aver usato pop", animali)
+print("Lista di animali dopo aver usato pop", animali) """
+
+""" ------------------------------------------------------------ """
+
+""" Esercizio 2: Lavorare con le Tuple
+Crea una Tupla con tre colori.
+Stampa il secondo colore nella Tupla
+Tenta di aggiungere un nuovo colore e nota l'errore per capire l'immutabilità delle Tuple """
+
+print("creo una Tupla con 3 colori")
+
+colori = ("rosso", "verde", "marrone")
+print(colori[1])
+
+# colori.append("giallo") # Questo causerà un errore perché le tuple sono immutabili
+print("Le tuple sono immutabili, non è possibile aggiungere elementi dopo la creazione.")
