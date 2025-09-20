@@ -441,11 +441,31 @@ Aggiungi una nuova chiave genere al dizionario.
 Aggiorna l'anno di pubblicazione.
 Stampa il dizionario aggiornato. """
 
-print("sto creando un dizionario")
+""" print("sto creando un dizionario")
 
 libro = {"titolo":"le mie pigioni", "autore":"Silvio Pellicano", "anno":2023}
 print(libro)
 libro["genere"] = "Fantasy"
 print(libro)
 libro["anno"] = 2024
-print(libro)
+print(libro) """
+
+""" -------------------------------------------------------------- """
+""" Esercizio 4: Operazioni sui Set
+Crea un set con tre numeri.
+Aggiungi un nuovo numero al set.
+Rimuovi un numero dal set.
+Crea un secondo set e calcola l'unione dei due set. """
+
+primo_set = {1,2,3}
+print("primo set", primo_set)
+
+primo_set.add(4)
+print("primo set con add", primo_set)
+
+primo_set.remove(2)
+print("primo set con remove", primo_set)
+
+secondo_set = {5,6,7}
+print("secondo set", secondo_set)
+print("union del primo set + secondo set", primo_set.union(secondo_set))
