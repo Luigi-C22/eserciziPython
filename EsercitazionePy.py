@@ -457,7 +457,7 @@ Aggiungi un nuovo numero al set.
 Rimuovi un numero dal set.
 Crea un secondo set e calcola l'unione dei due set. """
 
-primo_set = {1,2,3}
+""" primo_set = {1,2,3}
 print("primo set", primo_set)
 
 primo_set.add(4)
@@ -468,4 +468,26 @@ print("primo set con remove", primo_set)
 
 secondo_set = {5,6,7}
 print("secondo set", secondo_set)
-print("union del primo set + secondo set", primo_set.union(secondo_set))
+print("union del primo set + secondo set", primo_set.union(secondo_set)) """
+
+""" -------------------------------------------------------------- """
+
+""" Esercizio 5: Applicazione di operazioni comuni
+Crea una lista di numeri da 1 a 10 e calcola la somma di tutti gli elementi.
+Crea una tupla con cinque parole e verifica se una parola specifica esiste nella tupla.
+Crea un dizionario di cinque prodotti (nome e prezzo) e trova il prezzo totale di tutti i prodotti.
+Crea due set di numeri e trova l'intersezione. """
+
+lista_numeri = [1,2,3,4,5,6,7,8,9,10]
+print("somma della lista", sum(lista_numeri))
+
+tupla_parole = ("uno", "due", "tre", "quattro", "cinque")
+print("La parola è nella tupla?" , "quattro" in tupla_parole)
+
+dizionario_prodotti = {"giochi": 10, "frutta": 13, "attrezzi": 25, "toner": 38, "mouse": 7}
+prezzo_totale = sum(dizionario_prodotti.values())
+print("Il prezzo totale di tutti i prodotti è: ", prezzo_totale)
+
+set_numeri_1 = {1,2,3,4,5}
+set_numeri_2 = {3,4,7,5,1}
+print("L'intersezione dei due set di numeri è:", set_numeri_1.intersection(set_numeri_2))
