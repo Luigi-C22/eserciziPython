@@ -478,7 +478,7 @@ Crea una tupla con cinque parole e verifica se una parola specifica esiste nella
 Crea un dizionario di cinque prodotti (nome e prezzo) e trova il prezzo totale di tutti i prodotti.
 Crea due set di numeri e trova l'intersezione. """
 
-lista_numeri = [1,2,3,4,5,6,7,8,9,10]
+""" lista_numeri = [1,2,3,4,5,6,7,8,9,10]
 print("somma della lista", sum(lista_numeri))
 
 tupla_parole = ("uno", "due", "tre", "quattro", "cinque")
@@ -490,4 +490,51 @@ print("Il prezzo totale di tutti i prodotti è: ", prezzo_totale)
 
 set_numeri_1 = {1,2,3,4,5}
 set_numeri_2 = {3,4,7,5,1}
-print("L'intersezione dei due set di numeri è:", set_numeri_1.intersection(set_numeri_2))
+print("L'intersezione dei due set di numeri è:", set_numeri_1.intersection(set_numeri_2)) """
+
+""" -------------------------------------------------------------- """
+
+""" PROGETTO FINALE: Sistema di inventario
+Esercizio 6: Sistema di inventario per un negozio.
+Crea un dizionario per rappresentare l'inventario del negozio, con i prodotti come chiavi e i loro prezzi come valori.
+Usa una lista per registrare le vendite di vari prodotti.
+Aggiorna l'inventario sottraendo gli articoli venduti.
+Stampa il valore totale delle vendite e l'inventario aggiornato. """
+
+print("SISTEMA DI INVENTARIO PER UN NEGOZIO")
+inventario = {
+  "quaderno": {"prezzo": 2, "quantita": 50},
+  "libro": {"prezzo": 10, "quantita": 30},
+  "risma": {"prezzo": 4.5, "quantita": 15},
+  "penna": {"prezzo": 1, "quantita": 66},
+  "astuccio": {"prezzo": 13, "quantita": 5},
+  "compasso": {"prezzo": 7, "quantita": 3},
+  "gomma": {"prezzo": 1.5, "quantita": 20},
+  "righello": {"prezzo": 2, "quantita": 6},
+  "block notes": {"prezzo": 5, "quantita": 10},
+}
+print("Inventario iniziale", inventario)
+vendite = ["quaderno", "penna", "gomma", "gomma"]
+print("Vendite", vendite)
+
+# Calcolo del valore totale delle vendite e aggiornamento inventario
+valore_totale_vendite = 0
+
+for prodotto in vendite:
+    if prodotto in inventario:
+        if inventario[prodotto]["quantita"] > 0:
+            # Aggiungi il prezzo del prodotto al totale vendite
+            valore_totale_vendite += inventario[prodotto]["prezzo"]
+            # Sottrai una unità dalla quantità
+            inventario[prodotto]["quantita"] -= 1
+        else:
+            print(f"Errore: {prodotto} non disponibile in magazzino!")
+    else:
+        print(f"Errore: {prodotto} non presente nell'inventario!")
+
+# Stampa risultati
+print("\nValore totale delle vendite: €", round(valore_totale_vendite, 2))
+print("\nInventario aggiornato:")
+for prodotto, dettagli in inventario.items():
+    print(f"{prodotto}: {dettagli['quantita']} pezzi rimasti, prezzo €{dettagli['prezzo']}")
+
