@@ -496,12 +496,14 @@ print("L'intersezione dei due set di numeri è:", set_numeri_1.intersection(set_
 
 """ PROGETTO FINALE: Sistema di inventario
 Esercizio 6: Sistema di inventario per un negozio.
-Crea un dizionario per rappresentare l'inventario del negozio, con i prodotti come chiavi e i loro prezzi come valori.
+Crea un dizionario per rappresentare l'inventario del negozio, 
+    con i prodotti come chiavi e i loro prezzi come valori.
+    *Aggiungo le quantità altrimenti l'esercizio non può andare avanti.
 Usa una lista per registrare le vendite di vari prodotti.
 Aggiorna l'inventario sottraendo gli articoli venduti.
 Stampa il valore totale delle vendite e l'inventario aggiornato. """
 
-print("SISTEMA DI INVENTARIO PER UN NEGOZIO")
+""" print("SISTEMA DI INVENTARIO PER UN NEGOZIO")
 inventario = {
   "quaderno": {"prezzo": 2, "quantita": 50},
   "libro": {"prezzo": 10, "quantita": 30},
@@ -538,3 +540,22 @@ print("\nInventario aggiornato:")
 for prodotto, dettagli in inventario.items():
     print(f"{prodotto}: {dettagli['quantita']} pezzi rimasti, prezzo €{dettagli['prezzo']}")
 
+ """
+
+""" ---------------------------------------------------------------------------- """
+""" ---------------------------------------------------------------------------- """
+
+""" GESTIONE DEGLI ERRORI E ECCEZIONI """
+def divisione_sicura(num1, num2):
+    if num2 == 0:
+        return "Errore: Non puoi dividere per zero!"
+    else:
+        return num1 / num2
+
+# Prova della funzione
+print("Rilevazione errori")
+risultato1 = divisione_sicura(15, 0)
+print(risultato1)  # Stampa l'errore
+
+risultato2 = divisione_sicura(15, 3)
+print(risultato2)  # Stampa 5.0
