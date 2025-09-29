@@ -546,7 +546,7 @@ for prodotto, dettagli in inventario.items():
 """ ---------------------------------------------------------------------------- """
 
 """ GESTIONE DEGLI ERRORI E ECCEZIONI """
-def divisione_sicura(num1, num2):
+""" def divisione_sicura(num1, num2):
     if num2 == 0:
         return "Errore: Non puoi dividere per zero!"
     else:
@@ -558,4 +558,28 @@ risultato1 = divisione_sicura(15, 0)
 print(risultato1)  # Stampa l'errore
 
 risultato2 = divisione_sicura(15, 3)
-print(risultato2)  # Stampa 5.0
+print(risultato2)  # Stampa 5.0 """
+
+""" ----------------------------------------------------------------------------- """
+""" 
+ Esercizio 2: Gestione delle eccezioni
+ Scrivi una funzione input_numero che chiede all'utente di inserire un numero.
+ Se l'utente inserisce un valore non numerico, la funzione deve restituire un messaggio di errore.
+ Se l'utente inserisce zero, la funzione deve restituire un messaggio  di errore specifico per la divisione per zero. """
+
+def input_numero():
+    try:
+        valore = input("Inserisci un numero: ")
+        numero = float(valore)  # Qui può sollevare ValueError se non è un numero
+
+        if numero == 0:
+            print("Errore: divisione per zero non consentita.")
+        else:
+            print(f"Hai inserito il numero: {numero}")
+            return numero  # opzionale: ritorna il numero
+
+    except ValueError:
+        print("Errore: il valore inserito non è un numero valido.")
+
+# Chiamata della funzione
+input_numero()
