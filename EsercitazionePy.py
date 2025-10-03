@@ -567,7 +567,7 @@ print(risultato2)  # Stampa 5.0 """
  Se l'utente inserisce un valore non numerico, la funzione deve restituire un messaggio di errore.
  Se l'utente inserisce zero, la funzione deve restituire un messaggio  di errore specifico per la divisione per zero. """
 
-def input_numero():
+""" def input_numero():
     try:
         valore = input("Inserisci un numero: ")
         numero = float(valore)  # Qui può sollevare ValueError se non è un numero
@@ -582,4 +582,19 @@ def input_numero():
         print("Errore: il valore inserito non è un numero valido.")
 
 # Chiamata della funzione
-input_numero()
+input_numero() """
+
+""" -------------------------------------------------------------------- """
+#Esempio di utilizzo di try except finally
+
+try:
+  numero = int(input("Iinserisci un numero: "))
+  risultato = 10 / numero
+except ZeroDivisionError:
+  print("Errore: divisione per zero.")
+except ValueError:
+  print("Errore: valore non valido.")
+else:
+  print("Risultato:", risultato)
+finally:
+  print("Operazione coompletata")
