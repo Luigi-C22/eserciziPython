@@ -585,10 +585,10 @@ print(risultato2)  # Stampa 5.0 """
 input_numero() """
 
 """ -------------------------------------------------------------------- """
-#Esempio di utilizzo di try except finally
+""" #Esempio di utilizzo di try except finally
 
 try:
-  numero = int(input("Iinserisci un numero: "))
+  numero = int(input("Inserisci un numero: "))
   risultato = 10 / numero
 except ZeroDivisionError:
   print("Errore: divisione per zero.")
@@ -597,4 +597,29 @@ except ValueError:
 else:
   print("Risultato:", risultato)
 finally:
-  print("Operazione coompletata")
+  print("Operazione completata") """
+
+""" ---------------------------------------------------------------- """
+
+""" Esercizio 3: Funzione con finally
+Scrivi una funzione calcola_rapporto che calcola il rapporto tra due numeri.
+La funzione deve utilizzare try, except, else e finally.
+finally deve stampare "Chiusura programma" independentemente dall'esito della divisione. """
+
+# Funzione con finally
+
+def calcola_rapporto():
+  try:
+    a = float(input("Inserisci il primo numero:"))
+    b = float(input("inserisci il secondo numero: "))
+
+    risultato = a / b
+  except ZeroDivisionError:
+    print("Errore: Non puoi dividere per zero.")
+  except ValueError:
+    print("Errore: Inserisci numeri validi.")
+  else:
+    print(f"Il risultato della divisione è: {risultato}")
+  finally:
+    print("Chiusura programma")
+calcola_rapporto()
