@@ -610,7 +610,7 @@ finally deve stampare "Chiusura programma" independentemente dall'esito della di
 
 def calcola_rapporto():
   try:
-    a = float(input("Inserisci il primo numero:"))
+    a = float(input("Inserisci il primo numero: "))
     b = float(input("inserisci il secondo numero: "))
 
     risultato = a / b
