@@ -608,7 +608,7 @@ finally deve stampare "Chiusura programma" independentemente dall'esito della di
 
 # Funzione con finally
 
-def calcola_rapporto():
+""" def calcola_rapporto():
   try:
     a = float(input("Inserisci il primo numero: "))
     b = float(input("inserisci il secondo numero: "))
@@ -623,3 +623,15 @@ def calcola_rapporto():
   finally:
     print("Chiusura programma")
 calcola_rapporto()
+ """
+
+""" ------------------------------------------------------------------ """
+
+## Creazione di eccezioni personalizzate
+class ErroreNegativo(Exception):
+  pass
+
+def radice_quadrata(x):
+  if x < 0:
+    raise ErroreNegativo("Errore: non è possibile calcolare la radice quadrata di un numero negativo.")
+  return x**0.5
