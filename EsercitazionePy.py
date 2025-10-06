@@ -628,10 +628,12 @@ calcola_rapporto()
 """ ------------------------------------------------------------------ """
 
 ## Creazione di eccezioni personalizzate
+
 class ErroreNegativo(Exception):
   pass
 
 def radice_quadrata(x):
   if x < 0:
-    raise ErroreNegativo("Errore: non è possibile calcolare la radice quadrata di un numero negativo.")
+    raise ErroreNegativo("Errore: non è possibile calcolare \
+                         la radice quadrata di un numero negativo.")
   return x ** 0.5
