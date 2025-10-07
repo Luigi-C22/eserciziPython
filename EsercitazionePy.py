@@ -627,7 +627,7 @@ calcola_rapporto()
 
 """ ------------------------------------------------------------------ """
 
-## Creazione di eccezioni personalizzate
+""" ## Creazione di eccezioni personalizzate
 
 class ErroreNegativo(Exception):
   pass
@@ -636,4 +636,22 @@ def radice_quadrata(x):
   if x < 0:
     raise ErroreNegativo("Errore: non è possibile calcolare \
                          la radice quadrata di un numero negativo.")
-  return x ** 0.5
+  return x ** 0.5 """
+
+""" ------------------------------------------------------------------ """
+
+""" Esercizio 4: Eccezione Personalizzata per Valore Negativo
+Crea un'eccezione personalizzata ErroreEtaNegativa.
+Scrivi una funzione controlla_eta che solleva questa eccezione se l'età inserita è negativa.
+La funzione deve restituire un messaggio "Età valida" se l'età è positiva. """
+
+#creazione di un'eccezione con valore negativo
+
+class ErroreEtaNegativa(Exception):
+  pass
+def controlla_eta(eta):
+  if eta < 0:
+    raise ErroreEtaNegativa("Errore l'età non puo essere un numero negativo")
+  return "Età valida"
+
+print(controlla_eta(8))
