@@ -673,7 +673,6 @@ class ElementoNonNumericoError(Exception):
     """Sollevata quando un elemento della lista non è un numero."""
     pass
 
-
 def calcola_media(lista):
     """
     Calcola la media di una lista di numeri.
