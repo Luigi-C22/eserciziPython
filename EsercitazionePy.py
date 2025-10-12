@@ -663,6 +663,7 @@ print(controlla_eta(8)) """
 Scrivi una funzione calcola_media che calcola la media di una lista di numeri.
 La funzione deve gestire gli errori se la lista è vuota o contiene elementi non numerici.
  """
+
 # Definizione delle eccezioni personalizzate
 class ListaVuotaError(Exception):
     """Sollevata quando la lista è vuota."""
@@ -700,7 +701,6 @@ def calcola_media(lista):
     
     # Calcolo della media
     return sum(lista) / len(lista)
-
 
 # Esempi di utilizzo con gestione degli errori
 if __name__ == "__main__":
