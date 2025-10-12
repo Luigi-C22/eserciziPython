@@ -627,7 +627,7 @@ calcola_rapporto()
 
 """ ------------------------------------------------------------------ """
 
-## Creazione di eccezioni personalizzate
+""" ## Creazione di eccezioni personalizzate
 
 class ErroreNegativo(Exception):
   pass
@@ -636,4 +636,94 @@ def radice_quadrata(x):
   if x < 0:
     raise ErroreNegativo("Errore: non è possibile calcolare \
                          la radice quadrata di un numero negativo.")
-  return x ** 0.5
+  return x ** 0.5 """
+
+""" ------------------------------------------------------------------ """
+
+""" Esercizio 4: Eccezione Personalizzata per Valore Negativo
+Crea un'eccezione personalizzata ErroreEtaNegativa.
+Scrivi una funzione controlla_eta che solleva questa eccezione se l'età inserita è negativa.
+La funzione deve restituire un messaggio "Età valida" se l'età è positiva. """
+
+""" #creazione di un'eccezione con valore negativo
+
+class ErroreEtaNegativa(Exception):
+  pass
+def controlla_eta(eta):
+  if eta < 0:
+    raise ErroreEtaNegativa("Errore l'età non puo essere un numero negativo")
+  return "Età valida"
+
+print(controlla_eta(8)) """
+
+""" ------------------------------------------------------------------ """
+
+
+""" Esercizio 5: Gestione di Input Non Validi
+Scrivi una funzione calcola_media che calcola la media di una lista di numeri.
+La funzione deve gestire gli errori se la lista è vuota o contiene elementi non numerici.
+ """
+# Definizione delle eccezioni personalizzate
+class ListaVuotaError(Exception):
+    """Sollevata quando la lista è vuota."""
+    pass
+
+class ElementoNonNumericoError(Exception):
+    """Sollevata quando un elemento della lista non è un numero."""
+    pass
+
+
+def calcola_media(lista):
+    """
+    Calcola la media di una lista di numeri.
+    
+    Args:
+        lista (list): Lista di numeri (int o float).
+        
+    Returns:
+        float: La media dei numeri nella lista.
+        
+    Raises:
+        ListaVuotaError: Se la lista è vuota.
+        ElementoNonNumericoError: Se un elemento non è un numero.
+    """
+    # Controllo 1: lista vuota
+    if not lista:
+        raise ListaVuotaError("Errore: la lista è vuota, impossibile calcolare la media.")
+    
+    # Controllo 2: tutti gli elementi devono essere numeri (int o float)
+    for elemento in lista:
+        if not isinstance(elemento, (int, float)):
+            raise ElementoNonNumericoError(
+                f"Errore: '{elemento}' non è un numero. Tutti gli elementi devono essere numerici."
+            )
+    
+    # Calcolo della media
+    return sum(lista) / len(lista)
+
+
+# Esempi di utilizzo con gestione degli errori
+if __name__ == "__main__":
+    # Test 1: lista valida
+    try:
+        print(calcola_media([10, 20, 30]))  # Output: 20.0
+    except (ListaVuotaError, ElementoNonNumericoError) as e:
+        print(e)
+
+    # Test 2: lista vuota
+    try:
+        print(calcola_media([]))
+    except (ListaVuotaError, ElementoNonNumericoError) as e:
+        print(e)
+
+    # Test 3: elemento non numerico
+    try:
+        print(calcola_media([1, 2, "tre", 4]))
+    except (ListaVuotaError, ElementoNonNumericoError) as e:
+        print(e)
+
+    # Test 4: numeri decimali (valido)
+    try:
+        print(calcola_media([1.5, 2.5, 3.0]))  # Output: 2.333...
+    except (ListaVuotaError, ElementoNonNumericoError) as e:
+        print(e)
