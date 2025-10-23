@@ -663,19 +663,19 @@ print(controlla_eta(8)) """
 Scrivi una funzione calcola_media che calcola la media di una lista di numeri.
 La funzione deve gestire gli errori se la lista è vuota o contiene elementi non numerici.
  """
-
+""" 
 # Definizione delle eccezioni personalizzate
 class ListaVuotaError(Exception):
-    """Sollevata quando la lista è vuota."""
+    # Sollevata quando la lista è vuota.
     pass
 
 class ElementoNonNumericoError(Exception):
-    """Sollevata quando un elemento della lista non è un numero."""
+    # Sollevata quando un elemento della lista non è un numero.
     pass
 
 def calcola_media(lista):
-    """
-    Calcola la media di una lista di numeri.
+   
+   # Calcola la media di una lista di numeri.
     
     Args:
         lista (list): Lista di numeri (int o float).
@@ -686,7 +686,7 @@ def calcola_media(lista):
     Raises:
         ListaVuotaError: Se la lista è vuota.
         ElementoNonNumericoError: Se un elemento non è un numero.
-    """
+    
     # Controllo 1: lista vuota
     if not lista:
         raise ListaVuotaError("Errore: la lista è vuota, impossibile calcolare la media.")
@@ -725,4 +725,38 @@ if __name__ == "__main__":
     try:
         print(calcola_media([1.5, 2.5, 3.0]))  # Output: 2.333...
     except (ListaVuotaError, ElementoNonNumericoError) as e:
-        print(e)
+        print(e)  """
+
+""" ----------------------------------------------------------------------- """
+
+""" Esercizio 6:Divisione sicura con Input da File
+Crea un file di testo numeri.txt contenente una serie di numeri separati da nuove righe.
+Scrivi una funzione leggi_numeri che legge i numeri dal file e calcola la divisione di ciascunnumero per 10.
+La funzione deve gestire eventuali errori dovuti alla presenza di valori non numerici nel file. """
+
+print("Divisione sicura con input da file")
+import os
+
+def leggi_numeri(nome_file):
+    #nome_file = ("C:/User/LUIS/Desktop/Corso PY/numeri.txt")
+    try:
+        with open(nome_file , 'r') as file:
+            numeri = file.readlines()
+        
+        risultati = []
+        for linea in numeri:
+            try:
+                numero = float(linea.strip())
+                risultato = numero / 10
+                risultati.append(risultato)
+            except ValueError:
+                print(f"Errore: '{linea.strip()}' non è un numero valido.")
+        
+        return risultati
+    
+    except FileNotFoundError:
+        print(f"Errore: Il file '{nome_file}' non è stato trovato.")
+        return []
+    
+risultati = leggi_numeri("numeri.txt")
+print("Risultati:", risultati)
