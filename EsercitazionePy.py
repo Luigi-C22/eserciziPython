@@ -734,7 +734,7 @@ Crea un file di testo numeri.txt contenente una serie di numeri separati da nuov
 Scrivi una funzione leggi_numeri che legge i numeri dal file e calcola la divisione di ciascunnumero per 10.
 La funzione deve gestire eventuali errori dovuti alla presenza di valori non numerici nel file. """
 
-print("Divisione sicura con input da file")
+print("Divisione sicura con input da file!")
 import os
 
 def leggi_numeri(nome_file):
@@ -742,16 +742,19 @@ def leggi_numeri(nome_file):
     try:
         with open(nome_file , 'r') as file:
             numeri = file.readlines()
-        
+        numeri_validi = []    
         risultati = []
         for linea in numeri:
             try:
                 numero = float(linea.strip())
+                numeri_validi.append(numero)
                 risultato = numero / 10
                 risultati.append(risultato)
             except ValueError:
                 print(f"Errore: '{linea.strip()}' non è un numero valido.")
-        
+        print("Numeri validi letti dal file:", numeri_validi)
+        for numero in numeri_validi:
+            print(f"{numero} diviso 10 è {numero / 10}")  
         return risultati
     
     except FileNotFoundError:
