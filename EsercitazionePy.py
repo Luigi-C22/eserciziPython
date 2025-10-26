@@ -773,13 +773,15 @@ print("Risultati:", risultati) """
 
 #Esempio di classe e oggetto
 class Persona:
-  def __init__(self,nome,eta):
+  def __init__(self,nome,eta,sesso,qualita):
     self.nome = nome
     self.eta = eta
+    self.sesso = sesso
+    self.qualita = qualita
 
   def saluta(self):
-    print(f"Ciao, mi chiamo {self.nome} e ho {self.eta} anni.")
+    print(f"Ciao, mi chiamo {self.nome} e ho {self.eta} anni e sono {self.sesso} e sono {self.qualita}")
 
 #creazione di un oggetto
-persona1 = Persona("Alice", 30)
+persona1 = Persona("Alice", 30, "Femmina", "intelligente")
 persona1.saluta()
