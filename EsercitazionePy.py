@@ -734,22 +734,24 @@ Crea un file di testo numeri.txt contenente una serie di numeri separati da nuov
 Scrivi una funzione leggi_numeri che legge i numeri dal file e calcola la divisione di ciascunnumero per 10.
 La funzione deve gestire eventuali errori dovuti alla presenza di valori non numerici nel file. """
 
-print("Divisione sicura con input da file!")
+""" print("Divisione sicura con input da file!")
 import os
 
 def leggi_numeri(nome_file):
-    #nome_file = ("C:/User/LUIS/Desktop/Corso PY/numeri.txt")
+    
     try:
         with open(nome_file , 'r') as file:
             numeri = file.readlines()
         numeri_validi = []    
         risultati = []
+
         for linea in numeri:
             try:
                 numero = float(linea.strip())
                 numeri_validi.append(numero)
                 risultato = numero / 10
                 risultati.append(risultato)
+
             except ValueError:
                 print(f"Errore: '{linea.strip()}' non è un numero valido.")
         print("Numeri validi letti dal file:", numeri_validi)
@@ -762,4 +764,22 @@ def leggi_numeri(nome_file):
         return []
     
 risultati = leggi_numeri("numeri.txt")
-print("Risultati:", risultati)
+print("Risultati:", risultati) """
+
+""" ------------------------------------------------------------------------------ """
+""" ------------------------------------------------------------------------------ """
+
+"""PROGRAMMAZIONE ORIENTATA AGLI OGGETTI (OOP)"""
+
+#Esempio di classe e oggetto
+class Persona:
+  def __init__(self,nome,eta):
+    self.nome = nome
+    self.eta = eta
+
+  def saluta(self):
+    print(f"Ciao, mi chiamo {self.nome} e ho {self.eta} anni.")
+
+#creazione di un oggetto
+persona1 = Persona("Alice", 30)
+persona1.saluta()
