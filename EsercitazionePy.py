@@ -772,7 +772,7 @@ print("Risultati:", risultati) """
 """PROGRAMMAZIONE ORIENTATA AGLI OGGETTI (OOP)"""
 
 #Esempio di classe e oggetto
-class Persona:
+""" class Persona:
   def __init__(self,nome,eta,sesso,qualita):
     self.nome = nome
     self.eta = eta
@@ -785,3 +785,22 @@ class Persona:
 #creazione di un oggetto
 persona1 = Persona("Alice", 30, "Femmina", "intelligente")
 persona1.saluta()
+ """
+
+""" ------------------------------------------------------------------------------ """
+
+###Esercizio 1: Creazione di una classe
+#### Crea una classe Animale con un costruttore (__init__) che accetti un nome e una specie.
+#### Aggiungi un metodo descrivi che stampi il nome e la specie dell'animale.
+#### Crea una istanza della classe Animale e chiama il metodo descrivi.
+
+class Animale:
+  def __init__(self, nome, specie):
+    self.nome = nome
+    self.specie = specie
+
+  def descrivi(self):
+    print(f"L'animale si chiama: {self.nome} ed è della specie {self.specie}")
+
+animale = Animale("Lippo lappo", "cane oriundo")
+animale.descrivi()
