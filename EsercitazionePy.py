@@ -810,7 +810,7 @@ animale.descrivi() """
 """ Crea una classe Libro con attributi titolo e autore.
 Aggiungi un metodo descrizione che stampi il titolo e l'autore del libro.
 Crea un'istanza della classe Libro e chiama il metodo descrizione. """
-class Libro:
+""" class Libro:
     def __init__(self, titolo, autore):
         self.titolo = titolo
         self.autore = autore
@@ -819,6 +819,21 @@ class Libro:
         print(f"{self.titolo} scritto da {self.autore}")
 
 libro = Libro("Il Signore degli Anelli", "J.R.R. Tolkien")
-libro.descrizione()
+libro.descrizione() """
 
 """ ------------------------------------------------------------------------------ """
+#Esempio di attributo privato
+
+class ContoBancario:
+  def __init__(self, saldo):
+     self.__saldo = saldo
+  
+  def deposita(self, importo):
+     self.__saldo += importo
+
+  def mostra_saldo(self):
+     print(f"saldo: {self.__saldo}")
+
+conto = ContoBancario(1000)
+conto.deposita(500)
+conto.mostra_saldo()  # Output: saldo: 1500
