@@ -794,7 +794,7 @@ persona1.saluta()
 #### Aggiungi un metodo descrivi che stampi il nome e la specie dell'animale.
 #### Crea una istanza della classe Animale e chiama il metodo descrivi.
 
-class Animale:
+""" class Animale:
   def __init__(self, nome, specie):
     self.nome = nome
     self.specie = specie
@@ -803,4 +803,22 @@ class Animale:
     print(f"L'animale si chiama: {self.nome} ed è della specie {self.specie}")
 
 animale = Animale("Lippo lappo", "cane oriundo")
-animale.descrivi()
+animale.descrivi() """
+
+""" ------------------------------------------------------------------------------ """
+#Esercizio 2: Creazione di attributi e metodi
+""" Crea una classe Libro con attributi titolo e autore.
+Aggiungi un metodo descrizione che stampi il titolo e l'autore del libro.
+Crea un'istanza della classe Libro e chiama il metodo descrizione. """
+class Libro:
+    def __init__(self, titolo, autore):
+        self.titolo = titolo
+        self.autore = autore
+    
+    def descrizione(self):
+        print(f"{self.titolo} scritto da {self.autore}")
+
+libro = Libro("Il Signore degli Anelli", "J.R.R. Tolkien")
+libro.descrizione()
+
+""" ------------------------------------------------------------------------------ """
