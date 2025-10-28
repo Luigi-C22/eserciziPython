@@ -820,3 +820,5 @@ class Libro:
 
 libro = Libro("Il Signore degli Anelli", "J.R.R. Tolkien")
 libro.descrizione()
+
+""" ------------------------------------------------------------------------------ """
