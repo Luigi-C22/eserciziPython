@@ -837,3 +837,8 @@ class ContoBancario:
 conto = ContoBancario(1000)
 conto.deposita(500)
 conto.mostra_saldo()  # Output: saldo: 1500
+
+##Esercizio 3: Incapsulamento con attributi privati
+### Crea una classe ContoBancario con attributo privato __saldo.
+### Aggiungi metodi deposita e mostra_saldo.
+### Crea una istanza della classe e verifica il funzionamento dei metodi.
