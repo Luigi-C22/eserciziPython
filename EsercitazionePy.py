@@ -823,6 +823,10 @@ libro.descrizione() """
 
 """ ------------------------------------------------------------------------------ """
 #Esempio di attributo privato
+"""Esercizio 3: Incapsulamento con attributi privati
+Crea una classe ContoBancario con un attributo privato saldo.
+Aggiungi metodi deposita e mostra_saldo.
+Crea un'istanza della classe e verifica il funzionamento dei metodi"""
 
 class ContoBancario:
   def __init__(self, saldo):
