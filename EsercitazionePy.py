@@ -843,3 +843,25 @@ conto.deposita(500)
 conto.mostra_saldo()  # Output: saldo: 1500
  """
 """ ------------------------------------------------------------------------------  """
+#Esempio di ereditarietà
+class Animale:
+    def __init__(self, nome):
+        self.nome = nome
+    
+    def parla(self):
+        pass
+
+class Cane(Animale):
+    def parla(self):
+        print("Bau Bau")
+
+class Gatto(Animale):
+    def parla(self):
+        print("Miao Miao")
+
+fido = Cane("Fido")
+fido.parla()  # Output: Bau Bau
+
+micio = Gatto("Micio")
+micio.parla()  # Output: Miao Miao
+""" ------------------------------------------------------------------------------ """
