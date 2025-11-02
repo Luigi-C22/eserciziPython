@@ -844,7 +844,8 @@ conto.mostra_saldo()  # Output: saldo: 1500
  """
 """ ------------------------------------------------------------------------------  """
 #Esempio di ereditarietà
-class Animale:
+
+""" class Animale:
     def __init__(self, nome):
         self.nome = nome
     
@@ -863,5 +864,28 @@ fido = Cane("Fido")
 fido.parla()  # Output: Bau Bau
 
 micio = Gatto("Micio")
-micio.parla()  # Output: Miao Miao
+micio.parla()  # Output: Miao Miao """
+
 """ ------------------------------------------------------------------------------ """
+
+""" Esercizio 4: Ereditarietà
+
+Crea una classe Veicolo con un attributo marca e un metodo descrizione.
+
+Crea una sottoclasse Auto che eredita da Veicolo e aggiunge un metodo tipo
+   che stampa "Questa è un'auto".
+
+   Crea un'istanza della classe Auto e chiama i metodi descrizione e tipo. """
+class Veicolo:
+    def __init__(self, marca):
+        self.marca = marca
+    def descrizione(self):
+        print(f"Questo veicolo è della marca: {self.marca}")
+
+class Auto (Veicolo):
+    def tipo(self):
+        print("Questa è un'auto")
+
+auto = Auto("Toyota")
+auto.descrizione()
+auto.tipo()  # Output: Questa è un'auto """
