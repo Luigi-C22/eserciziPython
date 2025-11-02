@@ -828,7 +828,7 @@ Crea una classe ContoBancario con un attributo privato saldo.
 Aggiungi metodi deposita e mostra_saldo.
 Crea un'istanza della classe e verifica il funzionamento dei metodi"""
 
-class ContoBancario:
+""" class ContoBancario:
   def __init__(self, saldo):
      self.__saldo = saldo
   
@@ -841,3 +841,5 @@ class ContoBancario:
 conto = ContoBancario(1000)
 conto.deposita(500)
 conto.mostra_saldo()  # Output: saldo: 1500
+ """
+""" ------------------------------------------------------------------------------  """
