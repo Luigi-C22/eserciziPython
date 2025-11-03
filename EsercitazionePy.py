@@ -876,11 +876,11 @@ Crea una sottoclasse Auto che eredita da Veicolo e aggiunge un metodo tipo
    che stampa "Questa è un'auto".
 
    Crea un'istanza della classe Auto e chiama i metodi descrizione e tipo. """
-class Veicolo:
+""" class Veicolo:
     def __init__(self, marca):
         self.marca = marca
     def descrizione(self):
-        print(f"Questo veicolo è della marca: {self.marca}")
+        pass
 
 class Auto (Veicolo):
     def tipo(self):
@@ -888,4 +888,26 @@ class Auto (Veicolo):
 
 auto = Auto("Toyota")
 auto.descrizione()
-auto.tipo()  # Output: Questa è un'auto """
+auto.tipo()  """ # Output: Questa è un'auto """
+
+""" ------------------------------------------------------------------------------ """
+
+""" Esempio di Polimorfismo"""
+class Forma:
+  def area(self):
+    pass
+
+class Rettangolo(Forma):
+  def __init__(self, larghezza, altezza):
+      self.larghezza = larghezza
+      self.altezza = altezza
+    
+  def area(self):
+      return self.larghezza * self.altezza
+  
+class Cerchio(Forma):
+  def __init__(self, raggio):
+      self.raggio = raggio
+
+  def area(self):
+      return 3.14 * (self.raggio ** 2)
