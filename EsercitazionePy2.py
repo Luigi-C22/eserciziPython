@@ -122,7 +122,7 @@ auto.tipo()  """ # Output: Questa è un'auto """
 """ ------------------------------------------------------------------------------ """
 
 """ Esempio di Polimorfismo"""
-class Forma:
+""" class Forma:
   def area(self):
     pass
 
@@ -144,4 +144,12 @@ class Cerchio(Forma):
 forme = [Rettangolo(4, 5), Cerchio(3)]
 for forma in forme:
   print(f"L'area è: {forma.area()}")
-  
+   """
+""" ------------------------------------------------------------------------------ """
+
+""" Esercizio 5: Polimorfismo con classi """
+""" Crea una classe Animale con un metodo suono.
+Crea due sottoclassi, Cane e Gatto, che ridefiniscono  il metodo suono per stampare rispettivamente 'Woof' e ' Meow'.capitalize
+Crea un'istanza  di entrambe le classi e chiama il metodo suono. """
+
+class Animale:
