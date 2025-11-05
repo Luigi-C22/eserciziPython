@@ -140,3 +140,8 @@ class Cerchio(Forma):
 
   def area(self):
       return 3.14 * (self.raggio ** 2)
+  
+forme = [Rettangolo(4, 5), Cerchio(3)]
+for forma in forme:
+  print(f"L'area è: {forma.area()}")
+  
