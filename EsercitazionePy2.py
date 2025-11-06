@@ -149,7 +149,25 @@ for forma in forme:
 
 """ Esercizio 5: Polimorfismo con classi """
 """ Crea una classe Animale con un metodo suono.
-Crea due sottoclassi, Cane e Gatto, che ridefiniscono  il metodo suono per stampare rispettivamente 'Woof' e ' Meow'.capitalize
+Crea due sottoclassi, Cane e Gatto, che ridefiniscono  il metodo suono per stampare 
+          rispettivamente 'Woof' e ' Meow'.
 Crea un'istanza  di entrambe le classi e chiama il metodo suono. """
 
 class Animale:
+    def suono(self):
+        pass
+    
+class Cane(Animale):
+        def suono(self):
+            print("Woof")
+
+class Gatto(Animale):
+     def suono(self):
+          print("Meow")
+
+cane = Cane()
+cane.suono()
+gatto = Gatto()
+gatto.suono()
+
+    
