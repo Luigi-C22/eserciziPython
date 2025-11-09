@@ -155,7 +155,7 @@ Crea due sottoclassi, Cane e Gatto, che ridefiniscono  il metodo suono per stamp
           rispettivamente 'Woof' e ' Meow'.
 Crea un'istanza  di entrambe le classi e chiama il metodo suono. """
 
-class Animale:
+""" class Animale:
     def suono(self):
         pass
     
@@ -171,6 +171,53 @@ cane = Cane()
 cane.suono()
 gatto = Gatto()
 gatto.suono()
-
+ """
 """ ----------------------------------------------------------------------------------- """    
 
+#PROGERTTO FINALE: GESTIONE DI UN SISTEMA DI BIBLIOTECA
+""" Esercizio 6: Sistema di Biblioteca
+Crea una classe Libro con attributi titolo, autore e disponibile.
+Crea una classe Biblioteca con un attributo catalogo che è una lista di libri.
+Aggiungi metodi aggiungi_libro, presta_libro e restituisci_libro per gestire il catalogo.
+Crea un'istanza della biblioteca e aggiungi alcuni libri.
+Presta e restituisci un libro, aggiornando la disponibilità."""
+
+class Libro():
+     def __init__ (self, titolo, autore):
+          self.titolo = titolo
+          self.autore = autore
+          self.disponibile = True
+
+class Biblioteca():
+    def __init__(self):
+         self.catalogo = []
+    def aggiungi_libro(self, libro):
+         self.catalogo.append(libro)
+    def presta_libro(self, titolo):
+         for libro in self.catalogo:
+              if libro.titolo == titolo and libro.disponibile:
+                   libro.disponibile = False
+                   print(f"Hai prestato il libro: {titolo}")
+                   return
+         print(f"Il libro {titolo} non è disponibile.")
+    def restituisci_libro(self, titolo):
+         for libro in self.catalogo:
+              if libro.titolo == titolo and not libro.disponibile:
+                   libro.disponibile = True
+                   print(f"Hai restituito il libro: {titolo}")
+                   return
+         print(f"Il libro {titolo} non è stato prestato.")
+biblioteca = Biblioteca()
+libro1 = Libro("1984", "George Orwell")
+libro2 = Libro("Il Grande Gatsby", "F. Scott Fitzgerald")
+libro3 = Libro("To Kill a Mockingbird", "Harper Lee")
+libro4 = Libro("Pride and Prejudice", "Jane Austen")
+biblioteca.aggiungi_libro(libro1)
+biblioteca.aggiungi_libro(libro2)
+biblioteca.aggiungi_libro(libro3)
+biblioteca.aggiungi_libro(libro4)
+biblioteca.presta_libro("1984")
+biblioteca.restituisci_libro("1984")    
+biblioteca.presta_libro("Il Grande Gatsby")
+biblioteca.restituisci_libro("Il Grande Gatsby")
+biblioteca.presta_libro("Moby Dick")  # Libro non disponibile
