@@ -145,6 +145,8 @@ forme = [Rettangolo(4, 5), Cerchio(3)]
 for forma in forme:
   print(f"L'area è: {forma.area()}")
    """
+
+
 """ ------------------------------------------------------------------------------ """
 
 """ Esercizio 5: Polimorfismo con classi """
@@ -170,4 +172,5 @@ cane.suono()
 gatto = Gatto()
 gatto.suono()
 
-    
+""" ----------------------------------------------------------------------------------- """    
+
