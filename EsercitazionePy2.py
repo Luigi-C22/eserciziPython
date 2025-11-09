@@ -174,7 +174,7 @@ gatto.suono()
  """
 """ ----------------------------------------------------------------------------------- """    
 
-#PROGERTTO FINALE: GESTIONE DI UN SISTEMA DI BIBLIOTECA
+#PROGETTO FINALE: GESTIONE DI UN SISTEMA DI BIBLIOTECA
 """ Esercizio 6: Sistema di Biblioteca
 Crea una classe Libro con attributi titolo, autore e disponibile.
 Crea una classe Biblioteca con un attributo catalogo che è una lista di libri.
@@ -191,8 +191,12 @@ class Libro():
 class Biblioteca():
     def __init__(self):
          self.catalogo = []
+    
+    
     def aggiungi_libro(self, libro):
          self.catalogo.append(libro)
+    
+    
     def presta_libro(self, titolo):
          for libro in self.catalogo:
               if libro.titolo == titolo and libro.disponibile:
@@ -200,6 +204,8 @@ class Biblioteca():
                    print(f"Hai prestato il libro: {titolo}")
                    return
          print(f"Il libro {titolo} non è disponibile.")
+    
+    
     def restituisci_libro(self, titolo):
          for libro in self.catalogo:
               if libro.titolo == titolo and not libro.disponibile:
@@ -207,6 +213,8 @@ class Biblioteca():
                    print(f"Hai restituito il libro: {titolo}")
                    return
          print(f"Il libro {titolo} non è stato prestato.")
+
+
 biblioteca = Biblioteca()
 libro1 = Libro("1984", "George Orwell")
 libro2 = Libro("Il Grande Gatsby", "F. Scott Fitzgerald")
@@ -217,7 +225,8 @@ biblioteca.aggiungi_libro(libro2)
 biblioteca.aggiungi_libro(libro3)
 biblioteca.aggiungi_libro(libro4)
 biblioteca.presta_libro("1984")
-biblioteca.restituisci_libro("1984")    
+biblioteca.restituisci_libro("1985")    
 biblioteca.presta_libro("Il Grande Gatsby")
 biblioteca.restituisci_libro("Il Grande Gatsby")
 biblioteca.presta_libro("Moby Dick")  # Libro non disponibile
+biblioteca.presta_libro("Orgoglio e pregiudizio") # Libro non disponibile
