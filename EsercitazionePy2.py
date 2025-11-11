@@ -219,13 +219,13 @@ biblioteca = Biblioteca()
 libro1 = Libro("1984", "George Orwell")
 libro2 = Libro("Il Grande Gatsby", "F. Scott Fitzgerald")
 libro3 = Libro("To Kill a Mockingbird", "Harper Lee")
-libro4 = Libro("Pride and Prejudice", "Jane Austen")
+
 biblioteca.aggiungi_libro(libro1)
 biblioteca.aggiungi_libro(libro2)
 biblioteca.aggiungi_libro(libro3)
-biblioteca.aggiungi_libro(libro4)
+
 biblioteca.presta_libro("1984")
-biblioteca.restituisci_libro("1985")    
+biblioteca.restituisci_libro("1985")    #Libro non prestato
 biblioteca.presta_libro("Il Grande Gatsby")
 biblioteca.restituisci_libro("Il Grande Gatsby")
 biblioteca.presta_libro("Moby Dick")  # Libro non disponibile
