@@ -232,3 +232,8 @@ biblioteca.presta_libro("Moby Dick")  # Libro non disponibile
 biblioteca.presta_libro("Orgoglio e pregiudizio") # Libro non disponibile """
 
 """ <------------------------------------------------------------------------------------------------- """
+# Esempio di letture di un file
+with open("file_di_testo.txt", "r") as file:
+    contenuto = file.read()
+    print(contenuto)
+    
