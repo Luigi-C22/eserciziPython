@@ -182,7 +182,7 @@ Aggiungi metodi aggiungi_libro, presta_libro e restituisci_libro per gestire il 
 Crea un'istanza della biblioteca e aggiungi alcuni libri.
 Presta e restituisci un libro, aggiornando la disponibilità."""
 
-class Libro():
+""" class Libro():
      def __init__ (self, titolo, autore):
           self.titolo = titolo
           self.autore = autore
@@ -229,4 +229,6 @@ biblioteca.restituisci_libro("1985")    #Libro non prestato
 biblioteca.presta_libro("Il Grande Gatsby")
 biblioteca.restituisci_libro("Il Grande Gatsby")
 biblioteca.presta_libro("Moby Dick")  # Libro non disponibile
-biblioteca.presta_libro("Orgoglio e pregiudizio") # Libro non disponibile
+biblioteca.presta_libro("Orgoglio e pregiudizio") # Libro non disponibile """
+
+""" <------------------------------------------------------------------------------------------------- """
