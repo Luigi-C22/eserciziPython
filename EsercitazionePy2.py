@@ -233,17 +233,22 @@ biblioteca.presta_libro("Orgoglio e pregiudizio") # Libro non disponibile """
 
 """ <------------------------------------------------------------------------------------------------- """
 # Esempio di letture di un file
-with open("file_di_testo.txt", "r") as file:
+""" with open("file_di_testo.txt", "r") as file:
     contenuto = file.read()
-    print(contenuto)
+    print(contenuto) """
 """ ------------------------------------------------------------------------------ """
 # Esercizio 1: Lettura di un file di testo""" 
 """ 
 Crea un file di testo saluti.txt contenente alcuni saluti in diverse lingue.
 Scrivi un programma che legge il contenuto del file e lo stampa a schermo. """
 
-with open("saluti.txt", "r") as file:
+""" with open("saluti.txt", "r") as file:
     contenuto = file.read()
     print(contenuto)
-
+ """
 """ ------------------------------------------------------------------------------ """
+#Esempio di scrittura file
+with open("output.txt",  "w") as file:
+    file.write("Ciao mondo\n")
+    file.write("Questo è un file di testo")
+
