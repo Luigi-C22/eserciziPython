@@ -252,3 +252,14 @@ with open("output.txt",  "w") as file:
     file.write("Ciao mondo\n")
     file.write("Questo è un file di testo")
 
+""" ------------------------------------------------------------------------------ """
+#Esercizio 2: Scrittura di un file di testo
+"""Scrivi un programma che chiede all'utente di inserire il proprio nome.
+Il programma deve salvare il nome in un file nomi.txt.
+Ogni nome deve essere aggiunto in una nuova riga, senza cancellare quelli esistenti."""
+
+with open("nomi_utenti.txt", "a") as file:
+    nome = input("Inserisci il tuo nome: ")
+    file.write(nome + "\n")
+
+
