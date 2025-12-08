@@ -248,9 +248,9 @@ Scrivi un programma che legge il contenuto del file e lo stampa a schermo. """
  """
 """ ------------------------------------------------------------------------------ """
 #Esempio di scrittura file
-with open("output.txt",  "w") as file:
+""" with open("output.txt",  "w") as file:
     file.write("Ciao mondo\n")
-    file.write("Questo è un file di testo")
+    file.write("Questo è un file di testo") """
 
 """ ------------------------------------------------------------------------------ """
 #Esercizio 2: Scrittura di un file di testo
@@ -258,8 +258,23 @@ with open("output.txt",  "w") as file:
 Il programma deve salvare il nome in un file nomi.txt.
 Ogni nome deve essere aggiunto in una nuova riga, senza cancellare quelli esistenti."""
 
-with open("nomi_utenti.txt", "a") as file:
+""" with open("nomi_utenti.txt", "a") as file:
     nome = input("Inserisci il tuo nome: ")
-    file.write(nome + "\n")
+    file.write(nome + "\n") """
 
+""" ------------------------------------------------------------------------------ """
 
+#Esempio di lettura riga per riga
+""" with open("file_di_testo.txt", "r") as file:
+    for riga in file:
+        print(riga.strip()) """
+""" ------------------------------------------------------------------------------ """
+
+#Esercizio 3: Contatore di Linee
+"""Crea un file documento.txt con alcune righe di testo.
+Scrivi un programma che legge il file e conta il numero di righe."""
+with open("documento.txt", "r") as file:
+    conta_righe = sum(1 for riga in file)
+    print(f"Il numero di righe nel file è: ", conta_righe)
+
+""" ------------------------------------------------------------------------------ """
