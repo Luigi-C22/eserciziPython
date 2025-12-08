@@ -236,4 +236,14 @@ biblioteca.presta_libro("Orgoglio e pregiudizio") # Libro non disponibile """
 with open("file_di_testo.txt", "r") as file:
     contenuto = file.read()
     print(contenuto)
-    
+""" ------------------------------------------------------------------------------ """
+# Esercizio 1: Lettura di un file di testo""" 
+""" 
+Crea un file di testo saluti.txt contenente alcuni saluti in diverse lingue.
+Scrivi un programma che legge il contenuto del file e lo stampa a schermo. """
+
+with open("saluti.txt", "r") as file:
+    contenuto = file.read()
+    print(contenuto)
+
+""" ------------------------------------------------------------------------------ """
