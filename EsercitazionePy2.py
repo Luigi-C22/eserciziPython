@@ -301,21 +301,43 @@ except FileNotFoundError:
 
 #File CSV
 """Esempio di lettura di un file CSV"""
-import csv
+""" import csv
 with open("dati.csv", "r") as file:
     lettore_csv =csv.reader(file)
     for riga in lettore_csv:
         print(riga)
-
+ """
 """ ------------------------------------------------------------------------------ """
 #Esercizio 5: Lettura di un file CSV
 """Crea un file studenti.csv contenente i nomi e le età di alcuni studenti.
 Scrivi un programma che legge il file e stampa i dati di ogni studente."""
 
-import csv
+""" import csv
 with open("studenti.csv", "r") as file:
     contenuto_csv = csv.reader(file)
     for riga in contenuto_csv:
-        print(f"Nome: {riga[0]}  Età: {riga[1]}")
+        print(f"Nome: {riga[0]}  Età: {riga[1]}") """
         
+""" ------------------------------------------------------------------------------ """
+#Esempio di scrittura di un file CSV
+""" import csv
+dati = [["Nome", "Età"], ["Alice", 22], ["Bob", 25]]
+
+with open("output.csv", "w", newline="")as file:
+    scrittore_csv = csv.writer(file)
+    scrittore_csv.writerows(dati)
+ """
+""" ------------------------------------------------------------------------------ """
+#Esercizio 6: Scrittura di dati in unn file CSV
+"""Crea una lista di dizionari, dove ogni dizionario 
+           rappresenta uno studente con "nome" e "età".
+Scrivi un programma che salva questi dati in un file studenti.csv, 
+           dove ogni riga rappresenta uno studente."""
+
+import csv
+studenti = [["nome", "età"], ["Carletta", 23], ["Davidino", 24], ["Elenuccia", 21]]
+with open("studenti.csv", "w", newline="") as file:
+    scrittore_csv = csv.writer(file)
+    scrittore_csv.writerows(studenti)
+
 """ ------------------------------------------------------------------------------ """
