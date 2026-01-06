@@ -273,8 +273,49 @@ Ogni nome deve essere aggiunto in una nuova riga, senza cancellare quelli esiste
 #Esercizio 3: Contatore di Linee
 """Crea un file documento.txt con alcune righe di testo.
 Scrivi un programma che legge il file e conta il numero di righe."""
-with open("documento.txt", "r") as file:
+""" with open("documento.txt", "r") as file:
     conta_righe = sum(1 for riga in file)
     print(f"Il numero di righe nel file è: ", conta_righe)
+ """
+""" ------------------------------------------------------------------------------ """
+#Esempio di gestione delle eccezioni
+""" try:
+    with open("file_inesistente.txt", "r") as file:
+        contenuto = file.read()
+        print(contenuto)
+except FileNotFoundError:
+    print("Errore: Il file non esiste.")"""
 
+""" ------------------------------------------------------------------------------ """
+#Esercizio 4: Gestione degli errori durante la lettura
+"""Scrivi un programma che tenta di aprire un file dati.txt.
+Se il il file non esiste, il progranna deve stampare "Il file non è stato trovato." """
+""" try:
+    with open ("dati.txt", "r") as file:
+        contenuto = file.read()
+        print(contenuto)
+except FileNotFoundError:
+    print("Il file non è stato trovato.") """
+
+""" ------------------------------------------------------------------------------ """
+
+#File CSV
+"""Esempio di lettura di un file CSV"""
+import csv
+with open("dati.csv", "r") as file:
+    lettore_csv =csv.reader(file)
+    for riga in lettore_csv:
+        print(riga)
+
+""" ------------------------------------------------------------------------------ """
+#Esercizio 5: Lettura di un file CSV
+"""Crea un file studenti.csv contenente i nomi e le età di alcuni studenti.
+Scrivi un programma che legge il file e stampa i dati di ogni studente."""
+
+import csv
+with open("studenti.csv", "r") as file:
+    contenuto_csv = csv.reader(file)
+    for riga in contenuto_csv:
+        print(f"Nome: {riga[0]}  Età: {riga[1]}")
+        
 """ ------------------------------------------------------------------------------ """

@@ -1,0 +1,6 @@
+prima riga
+seconda riga
+terza riga
+quarta riga
+quinta riga
+In totale ci sono 6 righe in questo file.

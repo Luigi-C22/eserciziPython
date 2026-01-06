@@ -1,0 +1,2 @@
+Ciao mondo
+Questo è un file di testo
