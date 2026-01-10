@@ -334,10 +334,55 @@ with open("output.csv", "w", newline="")as file:
 Scrivi un programma che salva questi dati in un file studenti.csv, 
            dove ogni riga rappresenta uno studente."""
 
-import csv
+""" import csv
 studenti = [["nome", "età"], ["Carletta", 23], ["Davidino", 24], ["Elenuccia", 21]]
 with open("studenti.csv", "w", newline="") as file:
     scrittore_csv = csv.writer(file)
-    scrittore_csv.writerows(studenti)
+    scrittore_csv.writerows(studenti) """
 
 """ ------------------------------------------------------------------------------ """
+#Progetto finale: Sistema di Registrazione delle Vendite
+#Esercizio 7: Sistema di Registrazione delle Vendite
+""".Crea un programma che chiede all'utente di inserire prodotto, quantità e prezzo.
+
+   .Salva ogni registrazione nel file vendite.csv, con una riga per ogni vendita.
+
+   .Aggiungi un'opzione per visualizzare tutte le vendite presenti nel file."""
+
+import csv
+def registra_vendita():
+    prodotto = input("Inserisci il nome del prodotto: ")
+    quantita = input("Inserisci la quantità venduta: ")
+    prezzo = input("Inserisci il prezzo del prodotto: ")
+    
+    with open("vendite.csv", "a", newline="") as file:
+        scrittore_csv = csv.writer(file)
+        scrittore_csv.writerow([prodotto, quantita, prezzo])
+    print("Vendita registrata con successo.")
+
+def visualizza_vendite():
+    try:
+        with open("vendite.csv", "r") as file:
+            lettore_csv = csv.reader(file)
+            print("Prodotto | Quantità | Prezzo")
+            for riga in lettore_csv:
+                print(f"{riga[0]} | {riga[1]} | {riga[2]}")
+    except FileNotFoundError:
+        print("Nessuna vendita registrata.")
+while True:
+    print("1. Registra una vendita")
+    print("2. Visualizza tutte le vendite")
+    print("3. Esci")
+    scelta = input("Scegli un'opzione (1-3): ")
+    
+    if scelta == "1":
+        registra_vendita()
+    elif scelta == "2":
+        visualizza_vendite()
+    elif scelta == "3":
+        print("Uscita dal programma.")
+        break
+    else:
+        print("Opzione non valida. Riprova.")
+
+        
