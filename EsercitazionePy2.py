@@ -390,7 +390,9 @@ while True:
 """ Esempio di utilizzo della libreria math """
 import math
 
-raggio = 5
+raggio = float(input("Inserisci la misura del raggio: " ))
 area_cerchio = math.pi * raggio ** 2
-print (f"Area del cerchio: {area_cerchio:.2f}")  # Output: Area del cerchio: 78.54
+print (f"Area del cerchio: {area_cerchio:.3f}")  # Output: Area del cerchio: 78.54
 
+
+""" ------------------------------------------------------------------------------ """
