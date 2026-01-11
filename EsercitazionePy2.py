@@ -388,11 +388,22 @@ while True:
 """ ------------------------------------------------------------------------------ """
 # La libreria Math
 """ Esempio di utilizzo della libreria math """
-import math
+""" import math
 
 raggio = float(input("Inserisci la misura del raggio: " ))
 area_cerchio = math.pi * raggio ** 2
-print (f"Area del cerchio: {area_cerchio:.3f}")  # Output: Area del cerchio: 78.54
+print (f"Area del cerchio: {area_cerchio:.3f}")  # Output: Area del cerchio: 78.539
+ """
 
+""" ------------------------------------------------------------------------------ """
+#Esercizio 1: Calcolo dell'ipotenusa
+""" Crea una funzione che calcola l'ipotenusa di un triangolo rettangolo dati i cateti A e B
+    Usa math.sqrt() per il calcolo della radice quadrata."""
+
+import math
+def calcola_ipotenusa(catetoA, CatetoB):
+    ipotenusa = math.sqrt(catetoA **2 + CatetoB ** 2)
+    return ipotenusa
+print(f"L'ipotenusa è: {calcola_ipotenusa(3,4)}")  # Output: L'ipotenusa è: 5.0
 
 """ ------------------------------------------------------------------------------ """
