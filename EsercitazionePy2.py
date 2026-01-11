@@ -349,7 +349,7 @@ with open("studenti.csv", "w", newline="") as file:
 
    .Aggiungi un'opzione per visualizzare tutte le vendite presenti nel file."""
 
-import csv
+""" import csv
 def registra_vendita():
     prodotto = input("Inserisci il nome del prodotto: ")
     quantita = input("Inserisci la quantità venduta: ")
@@ -383,7 +383,14 @@ while True:
         print("Uscita dal programma.")
         break
     else:
-        print("Opzione non valida. Riprova.")
+        print("Opzione non valida. Riprova.") """
 
 """ ------------------------------------------------------------------------------ """
-     
+# La libreria Math
+""" Esempio di utilizzo della libreria math """
+import math
+
+raggio = 5
+area_cerchio = math.pi * raggio ** 2
+print (f"Area del cerchio: {area_cerchio:.2f}")  # Output: Area del cerchio: 78.54
+
