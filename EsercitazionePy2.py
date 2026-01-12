@@ -409,16 +409,25 @@ print(f"L'ipotenusa è: {calcola_ipotenusa(30,40)}") """  # Output: L'ipotenusa 
 """ ------------------------------------------------------------------------------ """
 #La libreria Random
 """ Esempio di utilizzo della libreria random """
-import random
+""" import random
 numero_casuale = random.randint(1,100)
-print("Il numero casuale è:", numero_casuale)
+print("Il numero casuale è:", numero_casuale) """
 
 #Esercizio 2: Simulazione del lancio di un dado
 """Crea una funzione lancia_dado che simula il lancio di un dado a 6 facce,
  restituendo un numero tra 1 e 6.
  Esegui la funzione 10 volte e stampa i risultati."""
-import random
+""" import random
 def lancia_dado():
     return random.randint(1, 6)
 for _ in range(10):
-    print(f"Lancio del dado: {lancia_dado()}")
+    print(f"Lancio del dado: {lancia_dado()}") """
+
+""" ------------------------------------------------------------------------------ """
+#Esempio di utilizzo della libreria datetime
+from datetime import datetime
+adesso = datetime.now()
+data_italiana = adesso.strftime("%d/%m/%Y %H:%M:%S")
+
+print("Data e ora attuali:", data_italiana)  # Output: Data e ora attuali: 25/03/2023 14:30:45
+
