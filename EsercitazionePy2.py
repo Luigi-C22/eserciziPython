@@ -412,3 +412,13 @@ print(f"L'ipotenusa è: {calcola_ipotenusa(30,40)}") """  # Output: L'ipotenusa 
 import random
 numero_casuale = random.randint(1,100)
 print("Il numero casuale è:", numero_casuale)
+
+#Esercizio 2: Simulazione del lancio di un dado
+"""Crea una funzione lancia_dado che simula il lancio di un dado a 6 facce,
+ restituendo un numero tra 1 e 6.
+ Esegui la funzione 10 volte e stampa i risultati."""
+import random
+def lancia_dado():
+    return random.randint(1, 6)
+for _ in range(10):
+    print(f"Lancio del dado: {lancia_dado()}")
