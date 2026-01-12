@@ -400,10 +400,15 @@ print (f"Area del cerchio: {area_cerchio:.3f}")  # Output: Area del cerchio: 78.
 """ Crea una funzione che calcola l'ipotenusa di un triangolo rettangolo dati i cateti A e B
     Usa math.sqrt() per il calcolo della radice quadrata."""
 
-import math
-def calcola_ipotenusa(catetoA, CatetoB):
-    ipotenusa = math.sqrt(catetoA **2 + CatetoB ** 2)
+""" import math
+def calcola_ipotenusa(catetoA, catetoB):
+    ipotenusa = math.sqrt(catetoA **2 + catetoB ** 2)
     return ipotenusa
-print(f"L'ipotenusa è: {calcola_ipotenusa(3,4)}")  # Output: L'ipotenusa è: 5.0
+print(f"L'ipotenusa è: {calcola_ipotenusa(30,40)}") """  # Output: L'ipotenusa è: 5.0
 
 """ ------------------------------------------------------------------------------ """
+#La libreria Random
+""" Esempio di utilizzo della libreria random """
+import random
+numero_casuale = random.randint(1,100)
+print("Il numero casuale è:", numero_casuale)
